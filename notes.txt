@@ -1,0 +1,24 @@
+- Scenes can be for anything
+
+- There can be multipe scenes running in the same game simultaneously
+
+- A title screen for a game, for example, could be a scene. As could be a menu
+  and other things such as that
+
+- It is easy to imagine as one scene for the menu, one for the game and one for
+  the map
+
+- Scenes can all communicate between each other while having their other
+  concerns separated
+
+- Each scene can have its own file, making code easier to manage
+
+- Scenes follow the standard practice of 4 optional functions - init, preload,
+  create and update (looper function)
+
+- In the configuration, scenes must be specified in an array to the `scene` key
+
+- `this.scene.start(Str)` is how another scene is started from an existing one
+
+
+

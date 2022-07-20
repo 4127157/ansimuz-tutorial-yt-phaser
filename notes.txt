@@ -20,5 +20,7 @@
 
 - `this.scene.start(Str)` is how another scene is started from an existing one
 
+- Spritesheets are more expensive in processing than images in Phaser, thus,
+  whenever not required, make use of images than sprites
 
 

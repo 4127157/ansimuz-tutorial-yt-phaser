@@ -26,6 +26,10 @@ class Scene1 extends Phaser.Scene {
             frameHeight: 16
         });
 
+        this.load.spritesheet("power-up", "./assets/space_shooter_pack/Graphics/spritesheets/power-up.png", {
+            frameWidth: 16,
+            frameHeight: 16
+        });
     }
 
     create()

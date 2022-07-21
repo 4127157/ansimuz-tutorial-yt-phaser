@@ -1,4 +1,3 @@
-
 class Scene1 extends Phaser.Scene {
     constructor(){
         super("bootGame");
@@ -36,7 +35,7 @@ class Scene1 extends Phaser.Scene {
             frameHeight: 24
         });
 
-        this.load.spritesheet("bullet", "./assets/space_shooter_pack/Graphics/spritesheets/laser-bolts.png", {
+        this.load.spritesheet("beam", "./assets/space_shooter_pack/Graphics/spritesheets/laser-bolts.png", {
             frameWidth: 16,
             frameHeight: 16
         });
@@ -104,8 +103,11 @@ class Scene1 extends Phaser.Scene {
         });
 
         this.anims.create({
-            key: "fire_anim",
-            frames: this.anims.generateFrameNumbers("bullet"),
+            key: "beam_anim",
+            frames: this.anims.generateFrameNumbers("beam", {
+                start: 2,
+                end: 3
+            }),
             frameRate: 20,
             repeat: -1
         });

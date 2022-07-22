@@ -57,6 +57,8 @@ class Scene2 extends Phaser.Scene {
 
         this.projectiles = this.add.group();
 
+        this.physics.add.collider(this.projectiles, this.powerUps);
+
     }
 
     update(){

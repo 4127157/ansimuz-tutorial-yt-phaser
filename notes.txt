@@ -23,4 +23,8 @@
 - Spritesheets are more expensive in processing than images in Phaser, thus,
   whenever not required, make use of images than sprites
 
+- Its best to avoid using parallax effects liberally as that can be annoying
+  for the users
+
+
 

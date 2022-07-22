@@ -26,5 +26,12 @@
 - Its best to avoid using parallax effects liberally as that can be annoying
   for the users
 
+- The collider function takes a function callback as a parameter and can
+  optionally be supplied with the previous parameters in it to act on what
+  happens on collision
+
+- `overlap` is what is used when you don't want a physics reaction, it only
+  sees if two objects are touching, it does not simulate its physics
+
 
 

@@ -36,5 +36,9 @@
 - Phaser has a built in function to interpret and insert bitmap fonts with an
   XML that you supply to the preloading function
 
-- 
+- We can target objects by their flags. If an object has been set to be
+  disabled then accesing `object.active()` will return whether its active or
+  not
+
+- Phaser audio supports MP3 and OGG files
 

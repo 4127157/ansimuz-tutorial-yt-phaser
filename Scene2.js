@@ -91,9 +91,20 @@ class Scene2 extends Phaser.Scene {
     }
 
     hurtPlayer(player, enemy){
-        //this.resetShipPos(enemy);
-        player.x = config.width / 2 - 8;
-        player.y = config.height - 64;
+
+        this.resetShipPos(enemy);
+        
+        var explosion = new Explosion(this, player.x, player.y);
+
+        player.disableBody(true, true);
+
+        this.resetPlayer();
+    }
+
+    resetPlayer(){
+        var x = config.width / 2 - 8;
+        var y = config.height - 64;
+        this.player.enableBody(true, x, y, true, true);
     }
 
     zeroPad(number, size){
@@ -105,6 +116,9 @@ class Scene2 extends Phaser.Scene {
     }
 
     hitEnemy(projectile, enemy){
+
+        var explosion = new Explosion(this, enemy.x, enemy.y);
+
         projectile.destroy();
         this.resetShipPos(enemy);
         this.score += 50;
@@ -123,7 +137,9 @@ class Scene2 extends Phaser.Scene {
         this.movePlayerManager();
 
         if (Phaser.Input.Keyboard.JustDown(this.spacebar)){
-            this.shootBeam();
+            if(this.player.active){
+                this.shootBeam();
+            }
         }
         
         for(var  i = 0; i < this.projectiles.getChildren().length; i++){

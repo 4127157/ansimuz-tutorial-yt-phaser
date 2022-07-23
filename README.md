@@ -9,8 +9,8 @@ animations and maybe add new features that go beyond what ansimuz's series goes
 to. All non-commercial and experimental learning changes. 
 
 - Pause screen
-- Controls screen at the beginning of the screen
-- More bullet types
+- Controls screen at the beginning of the game
+- Bullet types
 - More enemy animations
 - Lives 
 - Ship types

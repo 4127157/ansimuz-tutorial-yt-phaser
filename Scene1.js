@@ -39,6 +39,8 @@ class Scene1 extends Phaser.Scene {
             frameWidth: 16,
             frameHeight: 16
         });
+
+        this.load.bitmapFont("pixelFont", "./assets/space_shooter_pack/font/font.png", "./assets/space_shooter_pack/font/font.xml");
     }
 
     create()

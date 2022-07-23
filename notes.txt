@@ -33,5 +33,8 @@
 - `overlap` is what is used when you don't want a physics reaction, it only
   sees if two objects are touching, it does not simulate its physics
 
+- Phaser has a built in function to interpret and insert bitmap fonts with an
+  XML that you supply to the preloading function
 
+- 
 

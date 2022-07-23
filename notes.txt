@@ -42,3 +42,8 @@
 
 - Phaser audio supports MP3 and OGG files
 
+- MP3 must be included as a fallback to browser lack of support if using OGG
+  files
+
+
+

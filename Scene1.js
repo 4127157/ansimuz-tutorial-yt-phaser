@@ -41,6 +41,11 @@ class Scene1 extends Phaser.Scene {
         });
 
         this.load.bitmapFont("pixelFont", "./assets/space_shooter_pack/font/font.png", "./assets/space_shooter_pack/font/font.xml");
+
+        this.load.audio("audio_beam", ["./assets/space_shooter_pack/sounds/beam.ogg", "./assets/space_shooter_pack/sounds/beam.mp3"]);
+        this.load.audio("audio_explosion", ["./assets/space_shooter_pack/sounds/explosion.ogg", "./assets/space_shooter_pack/sounds/explosion.mp3"]);
+        this.load.audio("audio_pickup", ["./assets/space_shooter_pack/sounds/pickup.ogg", "./assets/space_shooter_pack/sounds/pickup.mp3"]);
+        this.load.audio("music", ["./assets/space_shooter_pack/sounds/sci-fi_platformer12.ogg", "./assets/space_shooter_pack/sounds/sci-fi_platformer12.mp3"]);
     }
 
     create()
